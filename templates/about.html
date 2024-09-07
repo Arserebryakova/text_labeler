@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block header %}
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="/" class="nav-link px-3">Home</a></li>
+    <li><a href="/tool" class="nav-link px-3">Tool</a></li>
+    <li><a href="/about" class="nav-link px-3 link-secondary">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Overview</h2>
+    <p>This is a text labeling tool prototype showing basic abilities of nlp frameworks which could be used for automated text annotation.</p>
+    <p>Backend of the application is built on python with the help of
+        <a href="https://spacy.io">spaCy</a> - Natural Language Processing framework and
+        <a href="https://flask.palletsprojects.com">flask</a> - micro web framework
+    </p>
+    <p>Frontend layout is made with <a href="https://getbootstrap.com">https://getbootstrap.com</a> CSS framework,
+        interaction with api for text labeling is performed via AJAX requests</p>
+
+    <h4>Annotation types:</h4>
+    <h5>Named Entity Recognition (NER)</h5>
+    <p>
+        NER is a subtask of natural language processing (NLP) that focuses on identifying and
+        classifying
+        named entities mentioned in unstructured text into predefined categories. Named entities are real-world objects
+        that
+        have proper names, such as:
+    <ul>
+        <li>Organizations: Names of companies, institutions, or groups (e.g., "Google," "United Nations")</li>
+        <li>Locations: Geographical locations, such as countries, cities, and landmarks (e.g., "Paris," "Mount Everest")
+        </li>
+        <li>Dates and Times: Specific dates, times, or durations (e.g., "January 1, 2024," "two hours")</li>
+        <li>Monetary Values: References to currency amounts (e.g., "$100," "€500")</li>
+        <li>Persons: Names of people (e.g., "Albert Einstein," "Marie Curie")</li>
+        <li>Percentages: Percentage values mentioned in the text (e.g., "20% growth")</li>
+    </ul>
+    <h5>Linguistic annotations</h5>
+    <p>These annotations are crucial for natural language processing (NLP) and computational linguistics because
+        they help in understanding, processing, and analyzing language at various levels, such as syntax, semantics,
+        phonetics, and more.</p>
+    <p>Linguistic annotations can range from simple labels indicating parts of speech to complex structures representing
+        syntactic or semantic relationships.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="/" class="nav-link px-3 link-secondary">Home</a></li>
+    <li><a href="/tool" class="nav-link px-3">Tool</a></li>
+    <li><a href="/about" class="nav-link px-3">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Overview of functionality of text annotation tools</h2>
+    <h3>spaCy</h3>
+    spaCy is a powerful, open-source library for Natural Language Processing (NLP) in Python. It's widely known for its
+    speed, flexibility, and ease of use.
+    <ul>
+        Strengths:
+        <li>Customizability: Allows for deep customization of NLP models, making it ideal for specialized use cases.
+        </li>
+        <li>Integration: Easily integrates with other Python libraries and machine learning frameworks, making it a
+            preferred choice for developers and data scientists.
+        </li>
+        <li>Built-in Pipelines: Comes with a variety of pre-trained models for tasks like Named Entity Recognition
+            (NER), part-of-speech tagging, and more.
+        </li>
+        <li>Community and Support: Has a large and active community with extensive documentation and support.</li>
+        <li>Efficiency: Offers high-speed processing, suitable for both small and large datasets.</li>
+    </ul>
+    <h3>Labelbox</h3>
+    A versatile tool designed for collaborative data labeling, especially popular in computer vision.
+    <ul> Strengths:
+    <li>Collaborative Features: Strong collaborative capabilities with comprehensive project management.</li>
+    <li>Versatility: Supports multiple data types, including text, image, and video.</li>
+    </ul>
+    Limitations: Text annotation capabilities are less advanced compared to specialized NLP tools like spaCy.
+    <h3>LightTag</h3>
+    A cloud-based text annotation tool designed for NLP projects.
+    <ul>Strengths:
+    <li>User-Friendly Interface: Easy-to-use interface suitable for annotators of all skill levels.</li>
+    <li>Team Management: Built-in team management and review features.</li>
+    </ul>
+    Limitations: Being a cloud service, it may have limitations regarding data privacy and storage. It lacks the
+    extensive customizability and integration capabilities of spaCy.
+    <h3>SuperAnnotate</h3>
+    Primarily a computer vision tool, but it also provides some text annotation capabilities.
+    <ul>Strengths:
+    <li>Multi-Modal Capabilities: Supports text, images, and other types of data.</li>
+    <li>Collaboration and Management: Strong project management and team collaboration features.</li>
+        </ul>
+    Limitations: Text annotation capabilities are basic compared to NLP-specific tools like spaCy.
+    <h3> Label Studio</h3>
+    Open-source tool for labeling various types of data, including text.
+    <ul>Strengths:
+    <li>Flexibility: Highly customizable and open-source.</li>
+    <li>Multi-format Support: Works with text, image, audio, and more.</li>
+    </ul>
+    Limitations: May require more technical knowledge to set up and configure compared to spaCy's more straightforward
+    Python integration.
+    <h2>Conclusion</h2>
+    <p>While many of the tools offer strong features for text annotation, spaCy stands out for its flexibility, powerful
+        NLP capabilities, seamless integration into Python-based workflows, and strong community support. Its ability to
+        customize models, optimize for speed, and handle complex NLP tasks efficiently makes it the best choice for
+        advanced text labeling needs, especially in research and development settings.</p>
+</div>
+{% endblock %}

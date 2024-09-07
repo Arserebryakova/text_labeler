@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Tool{% endblock %}
+
+{% block header %}
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="/" class="nav-link px-3">Home</a></li>
+    <li><a href="/tool" class="nav-link px-3 link-secondary">Tool</a></li>
+    <li><a href="/about" class="nav-link px-3">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Text annotation tool demo</h1>
+<div class="container">
+    <div class="row py-4">
+        <div class="form-group col-6 text-center">
+            <label for="text_input_form" class="py-1">Input text for labeling</label>
+            <textarea class="form-control" id="text_input_form" rows="10">Apple Inc. released their first iPhone</textarea>
+            <div class="container py-4 px-0">
+                <div class="row">
+                    <div class="col-4 py-1">Annotation type:</div>
+                    <div class="col-8">
+                        <select class="form-select" aria-label="Default select example" id="label_selector">
+                            <option value="ner" selected>Named Entity Recognition</option>
+                            <option value="ling">Linguistic annotations</option>
+                            <option value="ling_compact">Linguistic dependencies compact</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group col-6 text-center" id="labeled_text">
+            <span class="py-1">Labeled text</span>
+        </div>
+
+    </div>
+
+    <div class="row py-2">
+
+    </div>
+</div>
+
+<script src="static/tool.js"></script>
+{% endblock %}
